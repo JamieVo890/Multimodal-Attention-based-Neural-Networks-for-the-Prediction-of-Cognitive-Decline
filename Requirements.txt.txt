@@ -1,0 +1,9 @@
+matplotlib          3.7.1
+nibabel             5.1.0
+numpy               1.24.3
+pandas              2.0.2
+session_info        1.0.0
+sklearn             1.2.2
+torch               2.0.1+cu118
+torchio             0.18.92
+tqdm                4.65.0
