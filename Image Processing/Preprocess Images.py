@@ -24,22 +24,26 @@ def main():
     args = sys.argv[1:]
     input_path = args[0]
     file_names_path = args[1]
-    smoothed_path = args[2]
-    normalised_path = args[3]
+    normalised_path = args[2]
+    smoothed_path = args[3]
     
     # Loop through files in the directory
     f = open(file_names_path)
-    for file in f:
-        # Load the NIfTI file
-        if file[2:-1] == "OAS30065_PIB_d0553/pet1/NIFTI/sub-OAS30065_ses-d0553_acq-PIB_pet.nii.gz": # Skip this one as it is a faulty file
-            continue
-        nifti_file = input_path + file[2:-1]
-        
-        img = nib.load(nifti_file)
-        data = img.get_fdata()
-        pet_data_3d = np.mean(data[:,:,:,-9:], axis=3)
-        smooth_img(pet_data_3d,smoothed_path,file)
-        
+
+    # We only want to smooth the PET data
+    if smoothed_path:
+        for file in f:
+            # Load the NIfTI file
+            if file[2:-1] == "OAS30065_PIB_d0553/pet1/NIFTI/sub-OAS30065_ses-d0553_acq-PIB_pet.nii.gz": # Skip this one as it is a faulty file
+                continue
+            nifti_file = input_path + file[2:-1]
+            
+            img = nib.load(nifti_file)
+            data = img.get_fdata()
+            pet_data_3d = np.mean(data[:,:,:,-9:], axis=3)
+            smooth_img(pet_data_3d,smoothed_path,file)
+    
+    # Normalise images
     for file in f:
         normalised_output_path = normalised_path + file[36:-1]
     

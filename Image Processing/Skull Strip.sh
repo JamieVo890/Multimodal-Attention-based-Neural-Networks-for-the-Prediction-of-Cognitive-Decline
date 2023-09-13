@@ -20,4 +20,5 @@ for file in "$input_dir"/*; do
     bet "$file" "$output_dir1/${filename_no_ext}.$extension" -f 0.5 -g 0.1
 
     # Run mri_synthstrip command
-
+    mri_synthstrip -i "$output_dir1/${filename_no_ext}.$extension" -o "$output_dir2/${filename_no_ext}.$extension" -b 4
+done
