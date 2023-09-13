@@ -11,7 +11,7 @@ Pytorch 2.0
 Further details on all packages used in this repository can be found in Requirements.txt
 
 ## Description
-We present a mutimodal attention-based CNN for prediction of the cognitively normal subjects to mild cognitive impairment (MCI) or Alzheimer's disease (AD).
+We present a mutimodal attention-based CNN for prediction of the conversion of cognitively normal subjects to mild cognitive impairment (MCI) or Alzheimer's disease (AD).
 
 <img src="https://github.com/JamieVo890/Honours-Project-2023/assets/70950884/f4e67588-45e4-4107-bba5-6627eaa4c2b9" width="800">
 <br>Due to the complexity and wideness of the architecture shown above, we train an individual model for each classification stage (patch feature extraction, multimodal attention, patch fusion). 
