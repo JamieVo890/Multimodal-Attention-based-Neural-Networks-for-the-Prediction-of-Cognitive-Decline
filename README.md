@@ -16,3 +16,9 @@ We present a mutimodal attention-based CNN for prediction of the conversion of c
 <img src="https://github.com/JamieVo890/Honours-Project-2023/assets/70950884/f4e67588-45e4-4107-bba5-6627eaa4c2b9" width="800">
 <br>Due to the complexity and wideness of the architecture shown above, we train an individual model for each classification stage (patch feature extraction, multimodal attention, patch fusion). 
 Features are extracted from each trained model and used as inputs for the subsequent classification stage. 
+
+## Image Prepocessing
+To write
+
+## Subject Selection
+To write
