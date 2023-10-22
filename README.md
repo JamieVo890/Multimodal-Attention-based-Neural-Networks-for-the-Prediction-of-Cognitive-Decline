@@ -23,7 +23,7 @@ Features are extracted from each trained model and used as inputs for the subseq
 
 ### Patch Feature Extraction
 In the patch feature extraction stage, we first divide the MRI and PET images into 27 uniform patches. Each patch is then fed through a 3D ResNet-10 model to extract local features of each neuroimage. The 3D-ResNet code is adapted from https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master.
-![resnet](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/de9d45c0-1998-4e86-9f44-b512247b95da) Once trained, the features from the dense layer prior to the final dense and sigmoid layers (coloured in blue in the figure below) are extracted and used in the next stage of the classification process, multimodal attention.
+![resnet](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/de9d45c0-1998-4e86-9f44-b512247b95da) Once trained, the features from the dense layer prior to the final dense and sigmoid layers (coloured in blue in the figure above) are extracted and used in the next stage of the classification process, multimodal attention.
 
 ### Multimodal Attention
 In the second stage of the classification process, we introduce an attention-based ensemble architecture to facilitate the fusion of the different neuroimaging modalities. For every patch in corresponding positions between the MRI and PET
