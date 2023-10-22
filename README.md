@@ -15,7 +15,7 @@ In this project, we present <b>MNA-net</b>, a mutimodal attention-based CNN for 
 We define three stages in the classification process in MNA-net as shown in the figure below: 
   1. Patch feature extraction
   2. Multimodal attention
-  3. Patch fusion.
+  3. Patch fusion
 ![MNA-net](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/8658a856-293d-479b-b859-1a847c5c58fe)
 
 <br>Due to the complexity and wideness of the architecture shown above, we train an individual model for each classification stage (patch feature extraction, multimodal attention, patch fusion). 
