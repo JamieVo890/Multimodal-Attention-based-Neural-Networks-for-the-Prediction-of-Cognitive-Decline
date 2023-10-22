@@ -27,7 +27,7 @@ In the patch feature extraction stage, we first divide the MRI and PET images in
 
 ### Multimodal Attention
 In the second stage of the classification process, we introduce an attention-based ensemble architecture to facilitate the fusion of the different neuroimaging modalities. For every patch in corresponding positions between the MRI and PET
-patches, learnt features from the ResNet-10 models are extracted and pass them through an attention-based model. This model utilises self-attention mechanisms to
+patches, learnt features from the ResNet-10 models are extracted and passed through an attention-based model. This model utilises self-attention mechanisms to
 enable the model to create shared representations of the MRI and PET features. Similar to the patch feature extraction stage, the features from the dense layer prior to the final dense and sigmoid layers are extracted and used in the final stage of the classification process, patch fusion.
 ![attention](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/0e5a9a65-8c52-4129-8086-e601ed9a533a)
 
