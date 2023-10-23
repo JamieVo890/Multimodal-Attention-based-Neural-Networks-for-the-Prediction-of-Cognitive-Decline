@@ -8,7 +8,7 @@ Image data was provided by OASIS3 from the Open Access Series of Imaging Studies
 ## Requirements
 Python 3.7.4 (and above)  
 Pytorch 2.0
-Further details on all packages used in this repository can be found in Requirements.txt
+<br>Further details on all packages used in this repository can be found in Requirements.txt
 
 ## Description
 In this project, we present <b>MNA-net</b>, a mutimodal attention-based CNN for the prediction of mild cognitive impairment (MCI) and Alzheimer's Disease (AD) progression in cognitively normal (CN) individuals. This model combines both MRI and PET neuroimages using attention mechanisms and patch based techniques.
