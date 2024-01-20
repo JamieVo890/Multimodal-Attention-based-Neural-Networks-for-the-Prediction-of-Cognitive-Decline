@@ -1,7 +1,6 @@
 # MNA-net: Multimodal Attention-Based Neural Networks for Prediction of Cognitive  Decline
 ## Paper
-To be written
-
+https://arxiv.org/pdf/2401.06777.pdf
 ## Dataset
 Image data was provided by OASIS3 from the Open Access Series of Imaging Studies (OASIS) (http://www.oasis-brains.org/). Image data is not uploaded to the repository as access needs to be requested.
 
