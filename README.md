@@ -10,7 +10,7 @@ Pytorch 2.0
 <br>Further details on all packages used in this repository can be found in Requirements.txt
 
 ## Description
-In this project, we present <b>MNA-net</b>, a mutimodal attention-based CNN for the prediction of mild cognitive impairment (MCI) and Alzheimer's Disease (AD) progression in cognitively normal (CN) individuals. This model combines both MRI and PET neuroimages using attention mechanisms and patch based techniques.
+In this work, we present a multimodal neuroimaging attention-based architecture, MNA-net. Our model employs a patch-based architecture and utilizes multi-headed self-attention mechanisms to integrate both MRI and PET features to predict the conversion of CN individuals to MCI or AD. Utilizing attention mechanisms to create shared representations of MRI and PET features yields more meaningful information, thereby enhancing the prediction of cognitive decline and improving the model's performance.
 We define three stages in the classification process in MNA-net as shown in the figure below: 
   1. Patch feature extraction
   2. Multimodal attention
